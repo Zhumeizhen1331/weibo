@@ -19,3 +19,4 @@ Route::get('/', function () {
 Route::get('/','StaticPagesController@home')->name('home');
 Route::get('/help','StaticpagesController@help')->name('help');
 Route::get('/about','StaticpagesController@about')->name('about');
+Route::get('/signup','UsersController@create')->name('signup');
