@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/','StaticPagesController@home');
+Route::get('/help','StaticpagesController@help');
+Route::get('/about','StaticpagesController@about');
